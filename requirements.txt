@@ -2,3 +2,4 @@ gradio
 youtube_transcript_api
 openai
 flask
+gunicorn
