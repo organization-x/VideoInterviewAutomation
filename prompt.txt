@@ -1,0 +1,87 @@
+Candidate's Transcript:
+{}
+
+Candidate's Number of Pauses:
+{}
+
+Candidate's Length of Video:
+{} minutes
+
+Introduction:
+You are tasked with evaluating a candidate's interview transcript for a highly competitive position that demands not only technical expertise but also a strong alignment with our educational mission, leadership qualities, and a collaborative spirit. This evaluation requires a rigorous, critical analysis. Additionally, assess the presentation’s duration and pacing, as the ability to convey information effectively within a constrained timeframe and with minimal unnecessary pauses is crucial. We expect assessors to employ a stringent standard, focusing on identifying any shortcomings, gaps in knowledge, or areas for improvement. Our aim is to ensure only the highest caliber candidates progress, reflecting our no-tolerance policy for mediocrity. Your assessment should be blunt and uncompromising, providing clear justifications for each score based on the candidate's responses without inferring unstated intentions.
+
+Company Mission:
+We believe that education is the most valuable asset anyone can have, and we founded this camp to help students get ready for the real world.
+
+At AI Camp, we want to open doors for our students by teaching them real-world skills that they wouldn't find in their traditional classrooms to prepare them for opportunities in the technology field.
+
+Detailed Rubric for Evaluation:
+
+Alignment to Mission and Desire to Join (Max 5 Points)
+(0-1 Points): Exhibits little or no understanding or alignment with the mission. Fails to mention an interest in teaching, or reasons for joining are unclear, purely self-interested, or unrelated to the educational goals of the organization.
+(2 Points): Shows a basic alignment with the mission with a mention of teaching but lacks depth, passion, or a clear understanding of how teaching aligns with the organization's goals. Interest in teaching may be mentioned but not elaborated upon.
+(3 Points): Indicates a general interest in teaching and some alignment with the mission. Mentions a desire to join with an understanding of the importance of education but falls short of demonstrating a strong personal commitment to teaching or the organization's specific educational goals.
+(4 Points): Demonstrates a strong alignment with the mission with a clear, articulated interest in teaching. Shows a desire to join that goes beyond the basics, with some explanation of how their teaching can contribute meaningfully to the organization's goals.
+(5 Points): Demonstrates an exceptional and passionate alignment with the mission, clearly and enthusiastically articulating a strong desire to teach and contribute meaningfully to the organization's goals. Shows a deep understanding of the importance of education and how their specific skills and interests in teaching can significantly advance the mission.
+
+Desire to Learn (Max 5 Points)
+(0-1 Points): Displays no interest in learning from the mentoring experience, treating it as just another job.
+(2-3 Points): Recognizes the value of learning but does not prioritize it as a key motivation.
+(4-5 Points): Strongly motivated by a desire to learn from experiences as a mentor, viewing it as a central driving factor.
+
+Technical Explanation (KNN or Back Propagation) and Tone (Max 10 Points)
+(0-2 Points): Provides an unclear or incorrect technical explanation with a monotone or difficult-to-follow delivery.
+(3-6 Points): Offers a basic technical explanation with some engagement and occasional tone changes, showing an understanding of the subject.
+(7-8 Points): Gives a competent technical explanation, maintaining an engaging tone and showing enthusiasm for the topic.
+(9-10 Points): Excels with a clear, accurate, and engaging explanation, demonstrating exceptional enthusiasm and making the subject accessible and interesting to all listeners.
+
+Confidence (Max 4 Points)
+(0-1 Points): Demonstrates noticeable uncertainty, with significant hesitations or pauses.
+(2 Points): Shows a level of confidence with occasional hesitations.
+(3-4 Points): Exudes confidence throughout the presentation, without any noticeable hesitations.
+
+Comprehensibility (Max 4 Points)
+(0-1 Points): Utilizes overly technical language or inaccuracies, hindering comprehension.
+(2 Points): Generally understandable to those with a technical background, despite the prevalence of jargon.
+(3-4 Points): Communicates effectively, using relatable analogies that make the material comprehensible to audiences of all ages.
+
+Effort (Max 5 Points)
+(0-1 Points): Demonstrates minimal effort, failing to meet basic expectations.
+(2-3 Points): Meets basic expectations with a simple presentation, showing little beyond the minimum.
+(4-5 Points): Surpasses expectations with a passionate and innovative presentation, incorporating novel elements that enrich the experience significantly.
+
+Leadership and Product Strategy (Max 6 Points)
+(0-2 Points): Shows little to no leadership or strategic vision, lacking clarity in product direction.
+(3-4 Points): Displays some leadership qualities and understanding of product strategy, but lacks a compelling vision.
+(5-6 Points): Demonstrates strong leadership and a clear, innovative strategy for product development, aligning with organizational goals.
+
+Collaboration and Understanding Customer Needs (Max 6 Points)
+(0-2 Points): Limited collaboration with teams and understanding of customer needs.
+(3-4 Points): Adequate collaboration skills and a basic grasp of customer needs.
+(5-6 Points): Excellent collaboration with cross-functional teams and a deep understanding of customer needs, driving product development effectively.
+
+Presentation Length (Max 3 Points)
+(0 Points): The presentation significantly exceeds the ideal duration or is significantly under the ideal duration, lasting longer than 7 minutes or less than 2 minutes, indicating potential inefficiency in communication.
+(1 Point): The presentation is slightly over the ideal duration, lasting between 5 to 7 minutes, suggesting minor pacing issues.
+(2 Points): The presentation is within the ideal duration of 4 to 5 minutes, reflecting effective communication and time management skills.
+(3 Points): The presentation is not only within the ideal duration but also efficiently utilizes the time to convey the message concisely and effectively.
+
+Pauses and Pacing (Max 2 Points)
+(0 Points): The presentation contains excessive unnecessary pauses, disrupting the flow and indicating potential nervousness or lack of preparation.
+(1 Point): The presentation has a moderate number of pauses, but they occasionally disrupt the flow of information.
+(2 Points): The presentation has minimal pauses, contributing to a smooth flow of information and demonstrating confidence and preparation.
+
+Conclusion:
+Sum the scores for a total out of 50. Please be precise with your total. Based on the total score:
+
+0-39 Points: Does not qualify for an interview.
+40-50 Points: Qualifies for an interview, demonstrating strong potential.
+
+Modified Concluding Instructions for You (the AI):
+
+Evaluate the candidate's performance based on the total score and the assessment of their strengths and weaknesses in time management, presentation efficiency, and communication effectiveness. You should then decide the candidate's suitability for further interviews. Your decision should be:
+
+"Yes" if the candidate meets or exceeds the required criteria for an interview.
+"No" if the candidate does not meet the necessary criteria for an interview.
+
+Your output must be strictly one of these two options (Yes or No), ensuring a clear and direct conclusion based on the evaluation criteria provided.
