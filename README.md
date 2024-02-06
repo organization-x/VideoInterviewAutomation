@@ -1,4 +1,4 @@
-# README for YouTube Video Analysis and Lever Integration
+# YouTube Video Analysis and Lever Integration
 
 ## Overview
 
