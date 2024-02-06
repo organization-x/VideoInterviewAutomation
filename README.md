@@ -1,15 +1,3 @@
----
-title: VideoInterviewAutomation
-emoji: 🚀
-colorFrom: yellow
-colorTo: red
-sdk: gradio
-sdk_version: 4.16.0
-app_file: app.py
-pinned: false
-license: mit
----
-
 # YouTube Interview Analysis Tool
 
 This application evaluates YouTube video interviews to recommend whether the interviewee should be considered for a further interview based on a specific rubric. It leverages the YouTube Transcript API to fetch transcripts, analyzes the content with OpenAI's GPT-4, and provides recommendations through a simple web interface powered by Gradio.
