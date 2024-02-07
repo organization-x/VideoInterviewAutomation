@@ -122,6 +122,7 @@ def handle_webhook():
         print('done')
         return jsonify(analysis_result), 200
     except Exception as e:
+        print(e)
         logging.error(f"An unexpected error occurred: {e}")
         return make_response(jsonify({"error": "An unexpected error occurred"}), 500)
 
