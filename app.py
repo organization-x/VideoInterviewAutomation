@@ -89,6 +89,10 @@ def handle_webhook():
             logging.error("No data received in request")
             return make_response(jsonify({"error": "No data received"}), 400)
 
+        if data.get('toStageId') != os.getenv('VideoStageId'):
+            logging.error("Invalid credentials submitted in request.")
+            return make_response(jsonify({"error": "Invalid credentials submitted."}), 403)
+        
         opportunity_id = data.get('opportunityId')
         if not opportunity_id:
             # If opportunityId is not provided in the data
@@ -121,4 +125,4 @@ def handle_webhook():
         return make_response(jsonify({"error": "An unexpected error occurred"}), 500)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True,port=5002)
