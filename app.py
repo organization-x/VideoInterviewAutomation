@@ -82,7 +82,6 @@ def handle_webhook():
         - A success response with the analysis result and a 200 status code if all operations succeed.
         - An error response with a relevant message and an appropriate status code (400, 404, 500) if any operation fails.
     """
-    print(request.json['data'])
     try:
         data = request.json
         if not data:
@@ -92,21 +91,18 @@ def handle_webhook():
 
         data = data['data']
         if data.get('toStageId') != os.getenv('VideoStageId'):
-            print('weird 1')
             logging.error("Invalid credentials submitted in request.")
             return make_response(jsonify({"error": "Invalid credentials submitted."}), 403)
         
         opportunity_id = data.get('opportunityId')
         if not opportunity_id:
             # If opportunityId is not provided in the data
-            print('weird 2')
             logging.error("No opportunityId provided")
             return make_response(jsonify({"error": "No opportunityId provided"}), 400)
 
         candidate_video_url = get_youtube_url(opportunity_id)
         if not candidate_video_url:
             # If no URL is returned for the given opportunity_id
-            print('weird 3')
             logging.error(f"Unable to process video URL for opportunityId {opportunity_id}")
             analysis_result = "Unable to process the video URL. Currently only YouTube URLs are accepted."
 
@@ -115,20 +111,16 @@ def handle_webhook():
         analysis_result = analyze_transcript(candidate_video_url)
         if analysis_result is None:
             # Handle case where analysis_result is None or an error occurred during analysis
-            print('weird 4')
             logging.error(f"Error analyzing transcript for opportunityId {opportunity_id}")
             return make_response(jsonify({"error": "Failed to analyze transcript"}), 500)
 
         send_result = post_candidate_analysis_to_lever(analysis_result, opportunity_id)
         if send_result is None:
             # Assuming post_candidate_analysis_to_lever returns None on failure
-            print('weird 5')
             logging.error(f"Failed to send results to Lever for opportunityId {opportunity_id}")
             return make_response(jsonify({"error": "Failed to send results to Lever"}), 500)
-        print('done')
         return jsonify(analysis_result), 200
     except Exception as e:
-        print(e)
         logging.error(f"An unexpected error occurred: {e}")
         return make_response(jsonify({"error": "An unexpected error occurred"}), 500)
 
