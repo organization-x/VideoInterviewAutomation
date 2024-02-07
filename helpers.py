@@ -44,7 +44,6 @@ def get_video_id_from_url(url):
         logging.warning(f"No video ID found in URL: {url}")
         return None
     except Exception as e:
-        print(e)
         logging.error(f"Error extracting video ID from URL {url}: {e}")
         return None
     
@@ -64,7 +63,6 @@ def get_first_youtube_video_url(urls):
     for url in urls:
         if 'youtube' in url or 'youtu.be' in url:
             return url
-    print("no youtube")
     return None
 
 def get_youtube_url(opportunity_id):
@@ -143,7 +141,6 @@ def get_transcript_data_and_pause_count(video_id):
             logging.info(f"Transcript retrieved successfully for video ID {video_id}.")
             return full_transcript, total_duration // 60, pauses
     except Exception as e:
-        print(e)
         logging.error(f"Failed to retrieve transcript for video ID {video_id}. Error: {e}")
         return None, None, None
 
