@@ -82,7 +82,7 @@ def handle_webhook():
         - A success response with the analysis result and a 200 status code if all operations succeed.
         - An error response with a relevant message and an appropriate status code (400, 404, 500) if any operation fails.
     """
-    print(request.headers)
+    print(request.json.keys())
     try:
         data = request.json
         if not data:
