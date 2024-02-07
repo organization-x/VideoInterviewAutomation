@@ -90,6 +90,7 @@ def handle_webhook():
             logging.error("No data received in request")
             return make_response(jsonify({"error": "No data received"}), 400)
 
+        data = data['data']
         if data.get('toStageId') != os.getenv('VideoStageId'):
             logging.error("Invalid credentials submitted in request.")
             return make_response(jsonify({"error": "Invalid credentials submitted."}), 403)
@@ -119,9 +120,10 @@ def handle_webhook():
             # Assuming post_candidate_analysis_to_lever returns None on failure
             logging.error(f"Failed to send results to Lever for opportunityId {opportunity_id}")
             return make_response(jsonify({"error": "Failed to send results to Lever"}), 500)
-        
+        print('done')
         return jsonify(analysis_result), 200
     except Exception as e:
+        print(e)
         logging.error(f"An unexpected error occurred: {e}")
         return make_response(jsonify({"error": "An unexpected error occurred"}), 500)
 
